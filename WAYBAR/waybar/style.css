@@ -1,0 +1,179 @@
+/* Definição das cores do tema Blood Moon */
+@define-color background #10100E;
+@define-color foreground #C6C6C4;
+@define-color black #10100E;
+@define-color red #C40233;
+@define-color green #009F6B;
+@define-color yellow #FFD700;
+@define-color blue #0087BD;
+@define-color magenta #9A4EAE;
+@define-color cyan #20B2AA;
+@define-color white #C6C6C4;
+@define-color bright_black #696969;
+@define-color bright_red #FF2400;
+@define-color bright_green #03C03C;
+@define-color bright_yellow #FDFF00;
+@define-color bright_blue #007FFF;
+@define-color bright_magenta #FF1493;
+@define-color bright_cyan #00CCCC;
+@define-color bright_white #FFFAFA;
+
+/* Importação do arquivo de variáveis de cores */
+/* @import "bloodmoon.css"; */
+
+/* Estilização geral */
+#workspaces button {
+  padding: 0 5px;
+  background-color: transparent;
+  color: @red;
+  font-size: 20px;
+}
+
+* {
+  font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* Estilo da barra principal */
+window#waybar {
+  background-color: @background;
+  border-radius: 13px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+/* Estilo dos botões */
+button {
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each button name */
+  border: none;
+  border-radius: 0;
+}
+
+/* Remoção do efeito de hover estranho nos botões */
+button:hover {
+  background: inherit;
+  box-shadow: inset 0 -3px #ffffff;
+}
+
+/* Estilo dos botões de workspaces */
+
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused {
+  background-color: @bright_blue;
+  box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.urgent {
+  background-color: @red;
+}
+
+/* Estilo dos módulos */
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio {
+  padding: 0 10px;
+}
+
+/* Estilo do módulo de áudio */
+#pulseaudio {
+  color: @magenta;
+}
+
+/* Estilo do módulo de rede */
+#network {
+  color: @green;
+}
+
+/* Estilo do módulo de temperatura */
+#temperature {
+  color: @cyan;
+}
+
+/* Estilo do módulo de bateria */
+#battery {
+  color: @green;
+}
+
+/* Estilo do módulo de relógio */
+#clock {
+  color: @red;
+}
+
+/* Estilo do módulo de janela */
+#window {
+  color: @foreground;
+}
+
+/* Estilo das áreas dos módulos */
+.modules-right,
+.modules-left,
+.modules-center {
+  background-color: @background;
+  border-radius: 15px;
+}
+
+.modules-right {
+  padding: 0 10px;
+}
+
+.modules-left {
+  padding: 0 20px;
+}
+
+.modules-center {
+  padding: 0 10px;
+}
+
+/* Estilo do módulo de bateria em carga */
+#battery.charging,
+#battery.plugged {
+  color: @bright_blue;
+}
+
+/* Animação de piscar para bateria crítica */
+@keyframes blink {
+  to {
+    color: @black;
+  }
+}
+
+/* Usando steps() em vez de linear como função de timing para limitar o uso de CPU */
+#battery.critical:not(.charging) {
+  background-color: @bright_red;
+  color: @bright_white;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Estilo dos labels em foco */
+label:focus {
+  background-color: @black;
+}
+
+/* Estilo do módulo de áudio quando mudo */
+#pulseaudio.muted {
+  color: @foreground;
+}
+
+/* Estilo do módulo de memória */
+#memory {
+  color: @bright_green;
+}
+
+/* Estilo do módulo de CPU */
+#cpu {
+  color: @bright_yellow;
+}

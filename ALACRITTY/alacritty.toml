@@ -1,0 +1,20 @@
+import = [
+  "/usr/lib/node_modules/alacritty-themes/themes/Blood-Moon.toml"
+]
+
+[font]
+size = 12
+
+  [font.normal]
+  family = "FiraCode"
+  style = "Regular"
+
+[window] 
+blur = true
+
+  [window.padding]
+  x = 15
+  y = 15
+
+[selection]
+save_to_clipboard = true
