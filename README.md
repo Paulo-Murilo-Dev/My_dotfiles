@@ -31,8 +31,8 @@ O `HyperBloodMoon` é a primeira versão que eu fiz de um sistema baseado em `Ar
 Sem build! Apenas copie e cole os arquivos desejados nas pastas `.conf` e funcionará sem precisar baixar nenhuma dependência.
 
 <p align="center">
-  <img src="https://i.imgur.com/4vxcQYs.jpeg" alt="pic2" width="300"/>
-  <img src="https://i.imgur.com/GZPvN7w.jpeg" alt="pic3" width="300"/>
+  <img src="https://i.imgur.com/4vxcQYs.jpeg" alt="pic2" width="350"/>
+  <img src="https://i.imgur.com/GZPvN7w.jpeg" alt="pic3" width="350"/>
 </p>
 <p align="center">
   <img src="https://i.imgur.com/tRhxHEP.jpeg" alt="pic4" width="500"/>
