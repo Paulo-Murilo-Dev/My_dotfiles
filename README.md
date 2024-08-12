@@ -21,11 +21,12 @@ Configurações para o `HyperBloodMoon`
 | 🚀 **Launcher**  | `Rofi`           |
 | ☄️ **Bar**       | `Waybar`         |
 
-
+---
 ## 📝 Notas.
 
 O `HyperBloodMoon` é a primeira versão que eu fiz de um sistema baseado em `Arch` e `Wayland`. Usei como base muitos dotfiles e vários arquivos de configuração aleatórios do GitHub para deixar tudo do jeito que eu gosto. A maior parte das coisas está modificada, incluindo o blur e os atalhos do teclado. Confira o arquivo em `~/.config/hypr/configs/binds.conf` para modificações e também na mesma pasta ajuste o teclado para o seu gosto, já que eu atualmente utilizo um `ThinkPad L4403`.
 
+---
 ## 📦 Instalação.
 
 Sem build! Apenas copie e cole os arquivos desejados nas pastas `.conf` e funcionará sem precisar baixar nenhuma dependência.
@@ -35,7 +36,8 @@ Sem build! Apenas copie e cole os arquivos desejados nas pastas `.conf` e funcio
   <img src="https://i.imgur.com/GZPvN7w.jpeg" alt="pic3" width="400"/>
   <img src="https://i.imgur.com/tRhxHEP.jpeg" alt="pic4" width="420"/>
 </p>
---------------------------
+
+---
 
 ## ✉️ Contato.
 
