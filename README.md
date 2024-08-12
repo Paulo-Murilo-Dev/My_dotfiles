@@ -33,9 +33,10 @@ Sem build! Apenas copie e cole os arquivos desejados nas pastas `.conf` e funcio
 <p align="center">
   <img src="https://i.imgur.com/4vxcQYs.jpeg" alt="pic2" width="500"/>
   <img src="https://i.imgur.com/GZPvN7w.jpeg" alt="pic3" width="500"/>
+</p>
+<p align="center">
   <img src="https://i.imgur.com/tRhxHEP.jpeg" alt="pic4" width="500"/>
 </p>
-
 --------------------------
 
 ## ✉️ Contato.
